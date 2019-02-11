@@ -1270,10 +1270,10 @@ end
 --noinspection LuaOverlyLongMethod
 local function OnEvent(_, ev, addon, v)
     if ev == "PLAYER_ENTERING_WORLD" or ev == "PLAYER_UPDATE_RESTING" then
-        if IsInGuild()                  then SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "GUILD") end
-        if UnitInBattleground("player") then SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "BATTLEGROUND") end
-        if UnitInRaid("player")         then SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "RAID") end
-        if UnitInParty("player")        then SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "PARTY") end
+        if IsInGuild()                  then C_ChatInfo.SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "GUILD") end
+        if UnitInBattleground("player") then C_ChatInfo.SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "BATTLEGROUND") end
+        if UnitInRaid("player")         then C_ChatInfo.SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "RAID") end
+        if UnitInParty("player")        then C_ChatInfo.SendAddonMessage("BrokerCPUREV", MINOR_VERSION, "PARTY") end
         if not isUpdateNotified then updateNotify() end
         return
     end
@@ -1291,7 +1291,7 @@ local function OnEvent(_, ev, addon, v)
     if addon ~= "Broker_CPU" then return end
     if not firstLoad then return end
     firstLoad = false
-    RegisterAddonMessagePrefix("BrokerCPUREV")
+    C_ChatInfo.RegisterAddonMessagePrefix("BrokerCPUREV")
     numTotalAddOns = GetNumAddOns()
     --collectgarbage("stop") -- used internally for code profiling
     ResetCPUUsage          = newResetCPUUsage

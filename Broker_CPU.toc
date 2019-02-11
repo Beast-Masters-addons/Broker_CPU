@@ -1,4 +1,4 @@
-## Interface: 50001
+## Interface: 80100
 ## Title: Broker: CPU
 ## Notes: A lightweight Data Broker plugin to visualize AddOn CPU/Memory usage, Framerate, Latency.
 ## Author: Merah
