@@ -2,7 +2,7 @@
 ## Title: Broker: CPU
 ## Notes: A lightweight Data Broker plugin to visualize AddOn CPU/Memory usage, Framerate, Latency.
 ## Author: Merah
-## Version: 50001
+## Version: @project-version@
 ## X-Website: https://brokercpu.googlecode.com
 ## X-Email: ad@heapoverflow.com
 ## X-Category: Miscellaneous, Development Tools
