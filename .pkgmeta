@@ -1,0 +1,15 @@
+externals:
+  libs/LibStub:
+    url: https://repos.wowace.com/wow/libstub/trunk
+  libs/LibDBIcon:
+    url: https://repos.wowace.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0
+  libs/CallbackHandler:
+    #url:https://repos.wowace.com/wow/callbackhandler/trunk
+    url: https://repos.wowace.com/wow/ace3/trunk/CallbackHandler-1.0
+  libs/LibDataBroker:
+    url: https://github.com/tekkub/libdatabroker-1-1.git
+
+ignore:
+  - libs/LibStub/tests
+
+enable-nolib-creation: yes
