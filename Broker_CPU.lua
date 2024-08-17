@@ -104,6 +104,7 @@ local GetAddOnCPUUsage       = GetAddOnCPUUsage
 local GetAddOnMemoryUsage    = GetAddOnMemoryUsage
 local UpdateAddOnCPUUsage    = UpdateAddOnCPUUsage
 local UpdateAddOnMemoryUsage = UpdateAddOnMemoryUsage
+local EasyMenu = _G.EasyMenu or _G.EasyMenuCustom
 
 -- in most case ResetCPUUsage() is not used in performance addons, and certainly not in a quest mod
 -- if you get a warning about this in-game, this is most likely you are running Carbonite, it is known to do dirty hidden things with performance APIs

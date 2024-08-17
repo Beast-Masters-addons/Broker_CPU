@@ -19,4 +19,5 @@ libs\LibDataBroker\LibDataBroker-1.1.lua
 libs\LibDBIcon\lib.xml
 #@end-no-lib-strip@
 
+EasyMenu.lua
 Broker_CPU.lua
