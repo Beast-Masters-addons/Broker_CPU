@@ -71,7 +71,8 @@ local icon                           = "Interface\\AddOns\\Broker_CPU\\tt_icon"
 local arrowa                         = { bgFile = "Interface\\AddOns\\Broker_CPU\\tt_arrowa" }
 local arrowb                         = { bgFile = "Interface\\AddOns\\Broker_CPU\\tt_arrowb" }
 local arrowc                         = { bgFile = "Interface\\AddOns\\Broker_CPU\\tt_arrowc" }
-local MINOR_VERSION                  = tonumber(("$Revision: 38 $"):match("%d+"))
+local _, MINOR_VERSION               = _G['BMUtils-Version'].parse_version('@version@')
+local  VERSION                       = '@version@'
 local frFR                           = GetLocale() == "frFR"
 local fps_                           = frFR and "ips"  or "fps"
 local kb                             = frFR and "Ko"   or "KB"
@@ -1028,7 +1029,7 @@ local function onClick(self, button)
         slashes    = slashes or initSlashes()
         uidropdown = uidropdown or {
             -- Header
-            { text = ("%s r|cff7fff7f%s|r by |cff69ccf0Merax|r"):format(L.N_TITLE, MINOR_VERSION), justifyH = "CENTER", isTitle = true, notCheckable = true, keepShownOnClick = true },
+            { text = ("%s |cff7fff7f%s|r by |cff69ccf0Merax|r"):format(L.N_TITLE, VERSION), justifyH = "CENTER", isTitle = true, notCheckable = true, keepShownOnClick = true },
             { text = L.COLOR_GOLD.."@ La Croisade Écarlate FR", justifyH = "CENTER", isTitle = true, notCheckable = true, keepShownOnClick = true },
             -- Separator
             { text = L.COLOR_GOLD.."--------------------|r", justifyH = "CENTER", notCheckable = true, notClickable = true, isTitle = true, keepShownOnClick = true },
