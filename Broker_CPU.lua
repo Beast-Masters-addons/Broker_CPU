@@ -98,7 +98,7 @@ local CreateFrame    = CreateFrame
 local GetAddOnInfo = _G.GetAddOnInfo or (_G.C_AddOns and _G.C_AddOns.GetAddOnInfo)
 local GetFramerate   = GetFramerate
 local GetNetStats    = GetNetStats
-local GetNumAddOns   = GetNumAddOns
+local GetNumAddOns   = GetNumAddOns or (_G.C_AddOns and _G.C_AddOns.GetNumAddOns)
 local IsAddOnLoaded = _G.IsAddOnLoaded or (_G.C_AddOns and _G.C_AddOns.IsAddOnLoaded)
 
 local GetAddOnCPUUsage       = GetAddOnCPUUsage
