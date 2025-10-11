@@ -10,7 +10,7 @@ externals:
     url: https://github.com/tekkub/libdatabroker-1-1.git
   libs/BM-utils:
     url: https://github.com/Beast-Masters-addons/BM-utils.git
-    tag: v1.10
+    tag: v2.0
 
 ignore:
   - libs/LibStub/tests
